@@ -1,0 +1,45 @@
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore build related folders
+out/
+build/
+target/
+out/
+
+# Ignore idea files
+.idea
+*iml
+
+# Ignore Eclipse files
+.classpath
+.project
+.settings
+# Eclipse is odd in assuming in can use bin to put temp files into it
+# This assumes we do not have sub-projects that actually need bin files committed
+*/bin/
+
+# Java class files
+*.class
+
+# Ignore node files
+node_modules
+
+# Ignore Mac stuff
+.DS_Store
+
+__pycache__
+profiling_pb2.py
+venv
+
+# Ignore directory with tmp files
+/tmp/
+
+# Ignore Brewfile lock
+/tilt/preflight/Brewfile.lock.json
+
+# Tilt configuration flag
+.manual_tilt_trigger
+
+# Bazel outputs
+/bazel-*

@@ -1,0 +1,3 @@
+Benchmark                             Mode  Cnt  Score   Error  Units
+JsonSerializationBenchmark.adHoc     thrpt   25  7.053 ± 0.261  ops/s
+JsonSerializationBenchmark.fastJson  thrpt   25  7.865 ± 0.270  ops/s

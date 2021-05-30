@@ -22,24 +22,4 @@ out/
 # Java class files
 *.class
 
-# Ignore node files
-node_modules
-
-# Ignore Mac stuff
-.DS_Store
-
-__pycache__
-profiling_pb2.py
-venv
-
-# Ignore directory with tmp files
-/tmp/
-
-# Ignore Brewfile lock
-/tilt/preflight/Brewfile.lock.json
-
-# Tilt configuration flag
-.manual_tilt_trigger
-
-# Bazel outputs
-/bazel-*
+src/jmh/resources/real-recording.jfr

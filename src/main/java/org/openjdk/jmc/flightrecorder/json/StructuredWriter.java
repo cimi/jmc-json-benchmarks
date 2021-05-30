@@ -104,7 +104,7 @@ abstract class StructuredWriter {
     builder.setLength(0);
   }
 
-  final public void writeIntent() {
+  final public void writeIndent() {
     builder.append(indentionArray, 0, indent);
     column += indent;
   }

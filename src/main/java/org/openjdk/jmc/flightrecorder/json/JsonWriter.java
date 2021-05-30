@@ -85,7 +85,7 @@ abstract class JsonWriter extends StructuredWriter {
   protected void writeObjectEnd() {
     retract();
     writeln();
-    writeIntent();
+    writeIndent();
     write("}");
   }
 
@@ -104,7 +104,7 @@ abstract class JsonWriter extends StructuredWriter {
   }
 
   private void writeFieldName(String text) {
-    writeIntent();
+    writeIndent();
     write("\"");
     write(text);
     write("\": ");

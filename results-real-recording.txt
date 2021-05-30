@@ -1,0 +1,199 @@
+Benchmark                             Mode  Cnt  Score   Error  Units
+JsonSerializationBenchmark.adHoc     thrpt   25  2.614 ± 0.133  ops/s
+JsonSerializationBenchmark.fastJson  thrpt   25  3.983 ± 0.198  ops/s
+
+-----
+
+gradle jmh                                                                                                                                                                                            ─╯
+
+
+> Task :jmhRunBytecodeGenerator
+Processing 1 classes from /Users/alexandru.ciminian/go/src/github.com/cimi/jmc-json/build/classes/java/jmh with "reflection" generator
+Writing out Java source to /Users/alexandru.ciminian/go/src/github.com/cimi/jmc-json/build/jmh-generated-sources and resources to /Users/alexandru.ciminian/go/src/github.com/cimi/jmc-json/build/jmh-generated-resources
+Processing 0 classes from /Users/alexandru.ciminian/go/src/github.com/cimi/jmc-json/build/classes/kotlin/jmh with "reflection" generator
+Writing out Java source to /Users/alexandru.ciminian/go/src/github.com/cimi/jmc-json/build/jmh-generated-sources and resources to /Users/alexandru.ciminian/go/src/github.com/cimi/jmc-json/build/jmh-generated-resources
+Processing 1 classes from /Users/alexandru.ciminian/go/src/github.com/cimi/jmc-json/build/classes/java/test with "reflection" generator
+Writing out Java source to /Users/alexandru.ciminian/go/src/github.com/cimi/jmc-json/build/jmh-generated-sources and resources to /Users/alexandru.ciminian/go/src/github.com/cimi/jmc-json/build/jmh-generated-resources
+Processing 0 classes from /Users/alexandru.ciminian/go/src/github.com/cimi/jmc-json/build/classes/kotlin/test with "reflection" generator
+Writing out Java source to /Users/alexandru.ciminian/go/src/github.com/cimi/jmc-json/build/jmh-generated-sources and resources to /Users/alexandru.ciminian/go/src/github.com/cimi/jmc-json/build/jmh-generated-resources
+
+> Task :jmh
+# JMH version: 1.28
+# VM version: JDK 15.0.2, OpenJDK 64-Bit Server VM, 15.0.2+7
+# VM invoker: /usr/local/Cellar/openjdk/15.0.2/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/Users/alexandru.ciminian/go/src/github.com/cimi/jmc-json/build/tmp/jmh -Duser.country=GB -Duser.language=en -Duser.variant
+# Blackhole mode: full + dont-inline hint
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.openjdk.jmc.flightrecorder.json.JsonSerializationBenchmark.adHoc
+
+# Run progress: 0.00% complete, ETA 00:16:40
+# Fork: 1 of 5
+# Warmup Iteration   1: 2.522 ops/s
+# Warmup Iteration   2: 2.560 ops/s
+# Warmup Iteration   3: 2.363 ops/s
+# Warmup Iteration   4: 2.570 ops/s
+# Warmup Iteration   5: 2.583 ops/s
+Iteration   1: 2.492 ops/sING [54s]
+Iteration   2: 2.538 ops/sING [1m 4s]
+Iteration   3: 2.560 ops/sING [1m 14s]
+Iteration   4: 2.561 ops/sING [1m 25s]
+Iteration   5: 2.568 ops/sING [1m 35s]
+
+# Run progress: 10.00% complete, ETA 00:15:20
+# Fork: 2 of 5
+# Warmup Iteration   1: 3.042 ops/s5s]
+# Warmup Iteration   2: 3.048 ops/s6s]
+# Warmup Iteration   3: 2.616 ops/ss]
+# Warmup Iteration   4: 2.756 ops/s6s]
+# Warmup Iteration   5: 3.079 ops/s6s]
+Iteration   1: 3.006 ops/sING [2m 36s]
+Iteration   2: 2.830 ops/sING [2m 47s]
+Iteration   3: 2.647 ops/sING [2m 57s]
+Iteration   4: 3.060 ops/sING [3m 7s]
+Iteration   5: 2.813 ops/sING [3m 17s]
+
+# Run progress: 20.00% complete, ETA 00:13:40
+# Fork: 3 of 5
+# Warmup Iteration   1: 2.394 ops/s8s]
+# Warmup Iteration   2: 2.409 ops/s8s]
+# Warmup Iteration   3: 2.496 ops/s9s]
+# Warmup Iteration   4: 2.635 ops/s9s]
+# Warmup Iteration   5: 2.488 ops/ss]
+Iteration   1: 2.374 ops/sING [4m 19s]
+Iteration   2: 2.612 ops/sING [4m 30s]
+Iteration   3: 2.511 ops/sING [4m 40s]
+Iteration   4: 2.484 ops/sING [4m 50s]
+Iteration   5: 2.541 ops/sING [5m 0s]
+
+# Run progress: 30.00% complete, ETA 00:11:58
+# Fork: 4 of 5
+# Warmup Iteration   1: 2.357 ops/s1s]
+# Warmup Iteration   2: 2.487 ops/s1s]
+# Warmup Iteration   3: 2.457 ops/s1s]
+# Warmup Iteration   4: 2.551 ops/s2s]
+# Warmup Iteration   5: 2.443 ops/s2s]
+Iteration   1: 2.450 ops/sING [6m 2s]
+Iteration   2: 2.501 ops/sING [6m 12s]
+Iteration   3: 2.465 ops/sING [6m 23s]
+Iteration   4: 2.413 ops/sING [6m 33s]
+Iteration   5: 2.532 ops/sING [6m 43s]
+
+# Run progress: 40.00% complete, ETA 00:10:16
+# Fork: 5 of 5
+# Warmup Iteration   1: 2.638 ops/s4s]
+# Warmup Iteration   2: 2.769 ops/ss]
+# Warmup Iteration   3: 2.458 ops/s4s]
+# Warmup Iteration   4: 2.614 ops/s4s]
+# Warmup Iteration   5: 2.755 ops/s5s]
+Iteration   1: 2.687 ops/sING [7m 45s]
+Iteration   2: 2.505 ops/sING [7m 55s]
+Iteration   3: 2.592 ops/sING [8m 5s]
+Iteration   4: 2.776 ops/sING [8m 15s]
+Iteration   5: 2.820 ops/sING [8m 26s]
+
+
+Result "org.openjdk.jmc.flightrecorder.json.JsonSerializationBenchmark.adHoc":
+  2.614 ±(99.9%) 0.133 ops/s [Average]
+  (min, avg, max) = (2.374, 2.614, 3.060), stdev = 0.177
+  CI (99.9%): [2.481, 2.746] (assumes normal distribution)
+
+
+# JMH version: 1.28
+# VM version: JDK 15.0.2, OpenJDK 64-Bit Server VM, 15.0.2+7
+# VM invoker: /usr/local/Cellar/openjdk/15.0.2/libexec/openjdk.jdk/Contents/Home/bin/java
+# VM options: -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/Users/alexandru.ciminian/go/src/github.com/cimi/jmc-json/build/tmp/jmh -Duser.country=GB -Duser.language=en -Duser.variant
+# Blackhole mode: full + dont-inline hint
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.openjdk.jmc.flightrecorder.json.JsonSerializationBenchmark.fastJson
+
+# Run progress: 50.00% complete, ETA 00:08:33
+# Fork: 1 of 5
+# Warmup Iteration   1: 4.231 ops/s6s]
+# Warmup Iteration   2: 3.940 ops/s7s]
+# Warmup Iteration   3: 4.082 ops/s7s]
+# Warmup Iteration   4: 3.727 ops/ss]
+# Warmup Iteration   5: 3.469 ops/s7s]
+Iteration   1: 3.399 ops/sING [9m 27s]
+Iteration   2: 3.697 ops/sING [9m 38s]
+Iteration   3: 3.678 ops/sING [9m 48s]
+Iteration   4: 3.741 ops/sING [9m 58s]
+Iteration   5: 3.940 ops/sING [10m 9s]
+
+# Run progress: 60.00% complete, ETA 00:06:51
+# Fork: 2 of 5
+# Warmup Iteration   1: 3.851 ops/s19s]
+# Warmup Iteration   2: 4.148 ops/s30s]
+# Warmup Iteration   3: 4.692 ops/s40s]
+# Warmup Iteration   4: 4.370 ops/s50s]
+# Warmup Iteration   5: 4.056 ops/s0s]
+Iteration   1: 4.282 ops/sING [11m 10s]
+Iteration   2: 3.859 ops/sING [11m 20s]
+Iteration   3: 3.934 ops/sING [11m 31s]
+Iteration   4: 4.064 ops/sING [11m 41s]
+Iteration   5: 4.248 ops/sING [11m 51s]
+
+# Run progress: 70.00% complete, ETA 00:05:08
+# Fork: 3 of 5
+# Warmup Iteration   1: 4.460 ops/s2s]
+# Warmup Iteration   2: 4.872 ops/s12s]
+# Warmup Iteration   3: 4.778 ops/s22s]
+# Warmup Iteration   4: 4.542 ops/s32s]
+# Warmup Iteration   5: 3.864 ops/s43s]
+Iteration   1: 3.872 ops/sING [12m 53s]
+Iteration   2: 3.872 ops/sING [13m 3s]
+Iteration   3: 3.994 ops/sING [13m 13s]
+Iteration   4: 3.886 ops/sING [13m 23s]
+Iteration   5: 3.571 ops/sING [13m 33s]
+
+# Run progress: 80.00% complete, ETA 00:03:25
+# Fork: 4 of 5
+# Warmup Iteration   1: 4.169 ops/s43s]
+# Warmup Iteration   2: 4.291 ops/s54s]
+# Warmup Iteration   3: 4.555 ops/s4s]
+# Warmup Iteration   4: 4.393 ops/s14s]
+# Warmup Iteration   5: 4.235 ops/s24s]
+Iteration   1: 4.049 ops/sING [14m 34s]
+Iteration   2: 4.384 ops/sING [14m 44s]
+Iteration   3: 3.991 ops/sING [14m 54s]
+Iteration   4: 4.107 ops/sING [15m 4s]
+Iteration   5: 4.391 ops/sING [15m 14s]
+
+# Run progress: 90.00% complete, ETA 00:01:42
+# Fork: 5 of 5
+# Warmup Iteration   1: 4.534 ops/s25s]
+# Warmup Iteration   2: 4.574 ops/s36s]
+# Warmup Iteration   3: 4.248 ops/s46s]
+# Warmup Iteration   4: 4.231 ops/s56s]
+# Warmup Iteration   5: 4.298 ops/s6s]
+Iteration   1: 4.538 ops/sING [16m 17s]
+Iteration   2: 4.077 ops/sING [16m 27s]
+Iteration   3: 4.172 ops/sING [16m 37s]
+Iteration   4: 3.959 ops/sING [16m 47s]
+Iteration   5: 3.858 ops/sING [16m 57s]
+
+
+Result "org.openjdk.jmc.flightrecorder.json.JsonSerializationBenchmark.fastJson":
+  3.983 ±(99.9%) 0.198 ops/s [Average]
+  (min, avg, max) = (3.399, 3.983, 4.538), stdev = 0.265
+  CI (99.9%): [3.784, 4.181] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:17:04
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                             Mode  Cnt  Score   Error  Units
+JsonSerializationBenchmark.adHoc     thrpt   25  2.614 ± 0.133  ops/s
+JsonSerializationBenchmark.fastJson  thrpt   25  3.983 ± 0.198  ops/s

@@ -24,15 +24,11 @@ public class JsonSerializationBenchmark {
 
   @Setup(Level.Trial)
   public void doSetup() throws CouldNotLoadRecordingException, IOException {
-    System.out.println("Start setup");
-    InputStream is = readResource("hotmethods.jfr");
+    InputStream is = readResource("real-recording.jfr");
     if (is == null) {
-      System.out.println("Can't load");
       throw new IllegalStateException();
     }
     events = JfrLoaderToolkit.loadEvents(is);
-
-    System.out.println("Finish setup");
   }
 
   @Benchmark

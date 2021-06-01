@@ -29,3 +29,8 @@ dependencies {
 tasks.withType<Test> {
     maxHeapSize = "4g"
 }
+
+jmh {
+    resultFormat.set("JSON")
+    humanOutputFile.set(project.file("${project.buildDir}/reports/jmh/human.txt"))
+}

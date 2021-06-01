@@ -1,0 +1,3 @@
+Benchmark                            (recordingName)  Mode  Cnt     Score      Error  Units
+JsonSerializationBenchmark.adHoc            wldf.jfr  avgt    6  8770.825 ± 2776.229  ms/op
+JsonSerializationBenchmark.fastJson         wldf.jfr  avgt    6  1790.853 ±  566.437  ms/op

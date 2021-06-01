@@ -1,0 +1,1172 @@
+[
+    {
+        "jmhVersion" : "1.28",
+        "benchmark" : "org.openjdk.jmc.flightrecorder.json.JsonSerializationBenchmark.adHoc",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/local/Cellar/openjdk/15.0.2/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Djava.io.tmpdir=/Users/alexandru.ciminian/go/src/github.com/cimi/jmc-json/build/tmp/jmh",
+            "-Duser.country=GB",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "15.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "15.0.2+7",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "recordingName" : "007760_latency_before.jfr"
+        },
+        "primaryMetric" : {
+            "score" : 34.81077791863951,
+            "scoreError" : 2.3982344653975263,
+            "scoreConfidence" : [
+                32.41254345324198,
+                37.20901238403704
+            ],
+            "scorePercentiles" : {
+                "0.0" : 32.41074063754046,
+                "50.0" : 33.76733958249158,
+                "90.0" : 38.7192013372306,
+                "95.0" : 39.11231530859375,
+                "99.0" : 39.11231530859375,
+                "99.9" : 39.11231530859375,
+                "99.99" : 39.11231530859375,
+                "99.999" : 39.11231530859375,
+                "99.9999" : 39.11231530859375,
+                "100.0" : 39.11231530859375
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    36.98540783763838,
+                    32.71984097058824,
+                    35.930966749103945,
+                    32.41074063754046,
+                    36.216576776173284
+                ],
+                [
+                    33.27607473089701,
+                    35.939088286738354,
+                    32.924255325657896,
+                    38.45712535632184,
+                    32.97414162171053
+                ],
+                [
+                    35.80411673571429,
+                    32.73540521568628,
+                    39.11231530859375,
+                    33.76733958249158,
+                    32.908273644736845
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.28",
+        "benchmark" : "org.openjdk.jmc.flightrecorder.json.JsonSerializationBenchmark.adHoc",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/local/Cellar/openjdk/15.0.2/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Djava.io.tmpdir=/Users/alexandru.ciminian/go/src/github.com/cimi/jmc-json/build/tmp/jmh",
+            "-Duser.country=GB",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "15.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "15.0.2+7",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "recordingName" : "012641_allocation_fixed.jfr"
+        },
+        "primaryMetric" : {
+            "score" : 73.81795050905498,
+            "scoreError" : 6.354904184510639,
+            "scoreConfidence" : [
+                67.46304632454434,
+                80.17285469356563
+            ],
+            "scorePercentiles" : {
+                "0.0" : 66.70806456666666,
+                "50.0" : 71.8895967,
+                "90.0" : 82.28879923398509,
+                "95.0" : 83.26065397520661,
+                "99.0" : 83.26065397520661,
+                "99.9" : 83.26065397520661,
+                "99.99" : 83.26065397520661,
+                "99.999" : 83.26065397520661,
+                "99.9999" : 83.26065397520661,
+                "100.0" : 83.26065397520661
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    70.63019849295775,
+                    80.52854452,
+                    71.64776761428571,
+                    70.10178827972028,
+                    78.7122424921875
+                ],
+                [
+                    66.70806456666666,
+                    66.76050487333333,
+                    66.91583682666666,
+                    67.26314751677852,
+                    80.74025729838709
+                ],
+                [
+                    81.64089607317074,
+                    75.39900246616541,
+                    71.8895967,
+                    83.26065397520661,
+                    75.07075594029851
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.28",
+        "benchmark" : "org.openjdk.jmc.flightrecorder.json.JsonSerializationBenchmark.adHoc",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/local/Cellar/openjdk/15.0.2/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Djava.io.tmpdir=/Users/alexandru.ciminian/go/src/github.com/cimi/jmc-json/build/tmp/jmh",
+            "-Duser.country=GB",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "15.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "15.0.2+7",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "recordingName" : "020065_fibonacci.jfr"
+        },
+        "primaryMetric" : {
+            "score" : 311.59302223986754,
+            "scoreError" : 18.2861879033121,
+            "scoreConfidence" : [
+                293.3068343365554,
+                329.87921014317965
+            ],
+            "scorePercentiles" : {
+                "0.0" : 288.29152062857145,
+                "50.0" : 318.802835875,
+                "90.0" : 331.8386263096774,
+                "95.0" : 337.6924108387097,
+                "99.0" : 337.6924108387097,
+                "99.9" : 337.6924108387097,
+                "99.99" : 337.6924108387097,
+                "99.999" : 337.6924108387097,
+                "99.9999" : 337.6924108387097,
+                "100.0" : 337.6924108387097
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    318.802835875,
+                    326.04475806451615,
+                    320.5006845625,
+                    327.9361032903226,
+                    317.90181903125
+                ],
+                [
+                    288.5709560857143,
+                    288.29152062857145,
+                    290.0281844,
+                    290.260009,
+                    289.5771755714286
+                ],
+                [
+                    314.522317875,
+                    337.6924108387097,
+                    321.8668455625,
+                    320.321154,
+                    321.5785588125
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.28",
+        "benchmark" : "org.openjdk.jmc.flightrecorder.json.JsonSerializationBenchmark.adHoc",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/local/Cellar/openjdk/15.0.2/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Djava.io.tmpdir=/Users/alexandru.ciminian/go/src/github.com/cimi/jmc-json/build/tmp/jmh",
+            "-Duser.country=GB",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "15.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "15.0.2+7",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "recordingName" : "062727_memoryleak_fixed.jfr"
+        },
+        "primaryMetric" : {
+            "score" : 493.6744540738095,
+            "scoreError" : 8.712911304843377,
+            "scoreConfidence" : [
+                484.9615427689661,
+                502.3873653786529
+            ],
+            "scorePercentiles" : {
+                "0.0" : 485.8612139047619,
+                "50.0" : 490.67128333333335,
+                "90.0" : 511.73199231,
+                "95.0" : 515.7798882,
+                "99.0" : 515.7798882,
+                "99.9" : 515.7798882,
+                "99.99" : 515.7798882,
+                "99.999" : 515.7798882,
+                "99.9999" : 515.7798882,
+                "100.0" : 515.7798882
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    494.7529038571429,
+                    490.28449452380954,
+                    491.9065862857143,
+                    490.29753542857145,
+                    490.67128333333335
+                ],
+                [
+                    495.1239859047619,
+                    492.59977471428573,
+                    515.7798882,
+                    493.6333206666667,
+                    489.479235
+                ],
+                [
+                    509.03339505,
+                    490.04061995238095,
+                    489.5097270952381,
+                    485.8612139047619,
+                    486.1428471904762
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.28",
+        "benchmark" : "org.openjdk.jmc.flightrecorder.json.JsonSerializationBenchmark.adHoc",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/local/Cellar/openjdk/15.0.2/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Djava.io.tmpdir=/Users/alexandru.ciminian/go/src/github.com/cimi/jmc-json/build/tmp/jmh",
+            "-Duser.country=GB",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "15.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "15.0.2+7",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "recordingName" : "047826_guimark.jfr"
+        },
+        "primaryMetric" : {
+            "score" : 237.28748382676415,
+            "scoreError" : 18.58775867482126,
+            "scoreConfidence" : [
+                218.69972515194289,
+                255.8752425015854
+            ],
+            "scorePercentiles" : {
+                "0.0" : 203.31843982,
+                "50.0" : 238.03431353488372,
+                "90.0" : 261.918231,
+                "95.0" : 264.648081,
+                "99.0" : 264.648081,
+                "99.9" : 264.648081,
+                "99.99" : 264.648081,
+                "99.999" : 264.648081,
+                "99.9999" : 264.648081,
+                "100.0" : 264.648081
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    203.31843982,
+                    221.1949736304348,
+                    229.0698329090909,
+                    222.7842150222222,
+                    213.7957290425532
+                ],
+                [
+                    237.65719179069768,
+                    238.6830365952381,
+                    235.15263788372093,
+                    238.37323802380953,
+                    238.03431353488372
+                ],
+                [
+                    247.00810507317073,
+                    252.71885005,
+                    256.77528202564105,
+                    264.648081,
+                    260.098331
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.28",
+        "benchmark" : "org.openjdk.jmc.flightrecorder.json.JsonSerializationBenchmark.adHoc",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/local/Cellar/openjdk/15.0.2/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Djava.io.tmpdir=/Users/alexandru.ciminian/go/src/github.com/cimi/jmc-json/build/tmp/jmh",
+            "-Duser.country=GB",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "15.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "15.0.2+7",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "recordingName" : "098734_wldf.jfr"
+        },
+        "primaryMetric" : {
+            "score" : 7535.037956566666,
+            "scoreError" : 168.45645462137958,
+            "scoreConfidence" : [
+                7366.581501945287,
+                7703.494411188046
+            ],
+            "scorePercentiles" : {
+                "0.0" : 7298.7399765,
+                "50.0" : 7512.1246705,
+                "90.0" : 7765.1419055,
+                "95.0" : 7818.351803,
+                "99.0" : 7818.351803,
+                "99.9" : 7818.351803,
+                "99.99" : 7818.351803,
+                "99.999" : 7818.351803,
+                "99.9999" : 7818.351803,
+                "100.0" : 7818.351803
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    7512.1246705,
+                    7543.8997565,
+                    7458.422933,
+                    7477.59255,
+                    7522.995807
+                ],
+                [
+                    7298.7399765,
+                    7353.856821,
+                    7384.1276705,
+                    7466.630017,
+                    7377.329512
+                ],
+                [
+                    7727.936284,
+                    7818.351803,
+                    7729.6686405,
+                    7653.7708455,
+                    7700.1220615
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.28",
+        "benchmark" : "org.openjdk.jmc.flightrecorder.json.JsonSerializationBenchmark.adHoc",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/local/Cellar/openjdk/15.0.2/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Djava.io.tmpdir=/Users/alexandru.ciminian/go/src/github.com/cimi/jmc-json/build/tmp/jmh",
+            "-Duser.country=GB",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "15.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "15.0.2+7",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "recordingName" : "116661_exceptions.jfr"
+        },
+        "primaryMetric" : {
+            "score" : 1379.7930882880953,
+            "scoreError" : 36.74264924424383,
+            "scoreConfidence" : [
+                1343.0504390438514,
+                1416.5357375323392
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1331.987371625,
+                "50.0" : 1375.948311875,
+                "90.0" : 1429.0045145785716,
+                "95.0" : 1459.8491725714287,
+                "99.0" : 1459.8491725714287,
+                "99.9" : 1459.8491725714287,
+                "99.99" : 1459.8491725714287,
+                "99.999" : 1459.8491725714287,
+                "99.9999" : 1459.8491725714287,
+                "100.0" : 1459.8491725714287
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    1368.099132375,
+                    1375.948311875,
+                    1391.26762225,
+                    1400.555000125,
+                    1373.7346165
+                ],
+                [
+                    1459.8491725714287,
+                    1407.013772625,
+                    1408.44140925,
+                    1404.488268125,
+                    1391.70664575
+                ],
+                [
+                    1340.032742625,
+                    1355.090199,
+                    1338.27163975,
+                    1331.987371625,
+                    1350.410419875
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.28",
+        "benchmark" : "org.openjdk.jmc.flightrecorder.json.JsonSerializationBenchmark.adHoc",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/local/Cellar/openjdk/15.0.2/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Djava.io.tmpdir=/Users/alexandru.ciminian/go/src/github.com/cimi/jmc-json/build/tmp/jmh",
+            "-Duser.country=GB",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "15.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "15.0.2+7",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "recordingName" : "504214_allocation_before.jfr"
+        },
+        "primaryMetric" : {
+            "score" : 2665.9037752000004,
+            "scoreError" : 24.899602519171367,
+            "scoreConfidence" : [
+                2641.004172680829,
+                2690.8033777191717
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2615.82096575,
+                "50.0" : 2670.97378275,
+                "90.0" : 2699.63946205,
+                "95.0" : 2708.02459225,
+                "99.0" : 2708.02459225,
+                "99.9" : 2708.02459225,
+                "99.99" : 2708.02459225,
+                "99.999" : 2708.02459225,
+                "99.9999" : 2708.02459225,
+                "100.0" : 2708.02459225
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    2708.02459225,
+                    2674.967347,
+                    2677.50148825,
+                    2653.35007425,
+                    2642.765766
+                ],
+                [
+                    2681.67961225,
+                    2694.04937525,
+                    2673.70420125,
+                    2646.9442865,
+                    2687.230612
+                ],
+                [
+                    2670.97378275,
+                    2655.04848725,
+                    2656.603214,
+                    2649.89282325,
+                    2615.82096575
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.28",
+        "benchmark" : "org.openjdk.jmc.flightrecorder.json.JsonSerializationBenchmark.fastJson",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/local/Cellar/openjdk/15.0.2/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Djava.io.tmpdir=/Users/alexandru.ciminian/go/src/github.com/cimi/jmc-json/build/tmp/jmh",
+            "-Duser.country=GB",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "15.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "15.0.2+7",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "recordingName" : "007760_latency_before.jfr"
+        },
+        "primaryMetric" : {
+            "score" : 45.58077476285872,
+            "scoreError" : 2.419528357911469,
+            "scoreConfidence" : [
+                43.16124640494725,
+                48.000303120770184
+            ],
+            "scorePercentiles" : {
+                "0.0" : 41.5526921286307,
+                "50.0" : 46.614051539534884,
+                "90.0" : 48.192538654200405,
+                "95.0" : 48.19794731578947,
+                "99.0" : 48.19794731578947,
+                "99.9" : 48.19794731578947,
+                "99.99" : 48.19794731578947,
+                "99.999" : 48.19794731578947,
+                "99.9999" : 48.19794731578947,
+                "100.0" : 48.19794731578947
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    46.97218923943662,
+                    45.70051285388128,
+                    46.614051539534884,
+                    46.77695364018692,
+                    47.491710222748814
+                ],
+                [
+                    41.843324116666665,
+                    45.54134208181818,
+                    44.88285728125,
+                    46.779718387850465,
+                    48.19794731578947
+                ],
+                [
+                    41.77820639583334,
+                    41.5526921286307,
+                    44.40094611061947,
+                    48.188932879807695,
+                    46.99023724882629
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.28",
+        "benchmark" : "org.openjdk.jmc.flightrecorder.json.JsonSerializationBenchmark.fastJson",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/local/Cellar/openjdk/15.0.2/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Djava.io.tmpdir=/Users/alexandru.ciminian/go/src/github.com/cimi/jmc-json/build/tmp/jmh",
+            "-Duser.country=GB",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "15.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "15.0.2+7",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "recordingName" : "012641_allocation_fixed.jfr"
+        },
+        "primaryMetric" : {
+            "score" : 79.85557696345123,
+            "scoreError" : 6.017494144271171,
+            "scoreConfidence" : [
+                73.83808281918006,
+                85.8730711077224
+            ],
+            "scorePercentiles" : {
+                "0.0" : 68.85522517123287,
+                "50.0" : 82.2626382016129,
+                "90.0" : 85.5751805457627,
+                "95.0" : 86.10305452542373,
+                "99.0" : 86.10305452542373,
+                "99.9" : 86.10305452542373,
+                "99.99" : 86.10305452542373,
+                "99.999" : 86.10305452542373,
+                "99.9999" : 86.10305452542373,
+                "100.0" : 86.10305452542373
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    68.85522517123287,
+                    68.86665434246575,
+                    76.04358468939394,
+                    79.06157316535433,
+                    84.23609571428571
+                ],
+                [
+                    82.2626382016129,
+                    86.10305452542373,
+                    85.22326455932203,
+                    84.6056619327731,
+                    84.05998575609756
+                ],
+                [
+                    77.5052756,
+                    75.29806812781955,
+                    78.818740359375,
+                    83.8968721,
+                    82.99696020661158
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.28",
+        "benchmark" : "org.openjdk.jmc.flightrecorder.json.JsonSerializationBenchmark.fastJson",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/local/Cellar/openjdk/15.0.2/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Djava.io.tmpdir=/Users/alexandru.ciminian/go/src/github.com/cimi/jmc-json/build/tmp/jmh",
+            "-Duser.country=GB",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "15.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "15.0.2+7",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "recordingName" : "020065_fibonacci.jfr"
+        },
+        "primaryMetric" : {
+            "score" : 155.43502131658852,
+            "scoreError" : 12.519603692813579,
+            "scoreConfidence" : [
+                142.91541762377494,
+                167.9546250094021
+            ],
+            "scorePercentiles" : {
+                "0.0" : 135.1766698783784,
+                "50.0" : 160.51718222222223,
+                "90.0" : 169.92827007457626,
+                "95.0" : 170.1744776440678,
+                "99.0" : 170.1744776440678,
+                "99.9" : 170.1744776440678,
+                "99.99" : 170.1744776440678,
+                "99.999" : 170.1744776440678,
+                "99.9999" : 170.1744776440678,
+                "100.0" : 170.1744776440678
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    135.1766698783784,
+                    137.6747607027027,
+                    137.7052804931507,
+                    147.70384919117646,
+                    145.18658782608696
+                ],
+                [
+                    156.55552163076922,
+                    159.0216243015873,
+                    164.8669113442623,
+                    161.8051521935484,
+                    160.9906791904762
+                ],
+                [
+                    162.8321599032258,
+                    160.51718222222223,
+                    170.1744776440678,
+                    161.55033153225807,
+                    169.76413169491525
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.28",
+        "benchmark" : "org.openjdk.jmc.flightrecorder.json.JsonSerializationBenchmark.fastJson",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/local/Cellar/openjdk/15.0.2/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Djava.io.tmpdir=/Users/alexandru.ciminian/go/src/github.com/cimi/jmc-json/build/tmp/jmh",
+            "-Duser.country=GB",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "15.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "15.0.2+7",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "recordingName" : "062727_memoryleak_fixed.jfr"
+        },
+        "primaryMetric" : {
+            "score" : 494.42170919248707,
+            "scoreError" : 23.978483704370635,
+            "scoreConfidence" : [
+                470.4432254881164,
+                518.4001928968577
+            ],
+            "scorePercentiles" : {
+                "0.0" : 448.42957147826087,
+                "50.0" : 496.3989043809524,
+                "90.0" : 526.3023217852632,
+                "95.0" : 541.6548232631579,
+                "99.0" : 541.6548232631579,
+                "99.9" : 541.6548232631579,
+                "99.99" : 541.6548232631579,
+                "99.999" : 541.6548232631579,
+                "99.9999" : 541.6548232631579,
+                "100.0" : 541.6548232631579
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    506.9267245,
+                    448.42957147826087,
+                    500.48251655,
+                    494.6475791428571,
+                    507.24706635
+                ],
+                [
+                    541.6548232631579,
+                    504.8292383333333,
+                    516.0673208,
+                    500.87114204761906,
+                    483.2305099545455
+                ],
+                [
+                    466.68328172727274,
+                    485.52615622727274,
+                    496.1163429047619,
+                    467.21446022727275,
+                    496.3989043809524
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.28",
+        "benchmark" : "org.openjdk.jmc.flightrecorder.json.JsonSerializationBenchmark.fastJson",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/local/Cellar/openjdk/15.0.2/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Djava.io.tmpdir=/Users/alexandru.ciminian/go/src/github.com/cimi/jmc-json/build/tmp/jmh",
+            "-Duser.country=GB",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "15.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "15.0.2+7",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "recordingName" : "047826_guimark.jfr"
+        },
+        "primaryMetric" : {
+            "score" : 282.4959556390793,
+            "scoreError" : 10.36145288360824,
+            "scoreConfidence" : [
+                272.13450275547103,
+                292.85740852268754
+            ],
+            "scorePercentiles" : {
+                "0.0" : 269.28725710526317,
+                "50.0" : 281.79772930555555,
+                "90.0" : 298.4797568470588,
+                "95.0" : 299.83892055882353,
+                "99.0" : 299.83892055882353,
+                "99.9" : 299.83892055882353,
+                "99.99" : 299.83892055882353,
+                "99.999" : 299.83892055882353,
+                "99.9999" : 299.83892055882353,
+                "100.0" : 299.83892055882353
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    270.27669747368424,
+                    273.771484,
+                    278.73097869444445,
+                    281.79772930555555,
+                    280.72936888888887
+                ],
+                [
+                    295.7625888,
+                    282.7208397222222,
+                    276.8407828108108,
+                    297.57364770588237,
+                    284.89823480555555
+                ],
+                [
+                    269.28725710526317,
+                    271.6715584864865,
+                    287.7237412857143,
+                    285.81550494285716,
+                    299.83892055882353
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.28",
+        "benchmark" : "org.openjdk.jmc.flightrecorder.json.JsonSerializationBenchmark.fastJson",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/local/Cellar/openjdk/15.0.2/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Djava.io.tmpdir=/Users/alexandru.ciminian/go/src/github.com/cimi/jmc-json/build/tmp/jmh",
+            "-Duser.country=GB",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "15.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "15.0.2+7",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "recordingName" : "098734_wldf.jfr"
+        },
+        "primaryMetric" : {
+            "score" : 1178.157149711111,
+            "scoreError" : 31.60118227652783,
+            "scoreConfidence" : [
+                1146.5559674345832,
+                1209.758331987639
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1146.9427492222221,
+                "50.0" : 1168.500849,
+                "90.0" : 1231.7945302222222,
+                "95.0" : 1247.2788768888888,
+                "99.0" : 1247.2788768888888,
+                "99.9" : 1247.2788768888888,
+                "99.99" : 1247.2788768888888,
+                "99.999" : 1247.2788768888888,
+                "99.9999" : 1247.2788768888888,
+                "100.0" : 1247.2788768888888
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    1205.1022336666667,
+                    1171.3597814444445,
+                    1161.4447703333333,
+                    1189.3132383333334,
+                    1178.7494293333334
+                ],
+                [
+                    1151.5574585555555,
+                    1149.3642113333333,
+                    1154.1709147777779,
+                    1247.2788768888888,
+                    1158.0402885555557
+                ],
+                [
+                    1221.4716324444444,
+                    1203.7291046666667,
+                    1168.500849,
+                    1165.3317071111112,
+                    1146.9427492222221
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.28",
+        "benchmark" : "org.openjdk.jmc.flightrecorder.json.JsonSerializationBenchmark.fastJson",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/local/Cellar/openjdk/15.0.2/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Djava.io.tmpdir=/Users/alexandru.ciminian/go/src/github.com/cimi/jmc-json/build/tmp/jmh",
+            "-Duser.country=GB",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "15.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "15.0.2+7",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "recordingName" : "116661_exceptions.jfr"
+        },
+        "primaryMetric" : {
+            "score" : 924.732761621212,
+            "scoreError" : 37.10214659143101,
+            "scoreConfidence" : [
+                887.630615029781,
+                961.8349082126431
+            ],
+            "scorePercentiles" : {
+                "0.0" : 839.03154725,
+                "50.0" : 934.1158857272727,
+                "90.0" : 967.3344850181818,
+                "95.0" : 978.1509415454545,
+                "99.0" : 978.1509415454545,
+                "99.9" : 978.1509415454545,
+                "99.99" : 978.1509415454545,
+                "99.999" : 978.1509415454545,
+                "99.9999" : 978.1509415454545,
+                "100.0" : 978.1509415454545
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    904.42216575,
+                    939.3093773636364,
+                    900.5895170833334,
+                    839.03154725,
+                    896.3872616666666
+                ],
+                [
+                    950.5944522727273,
+                    934.1158857272727,
+                    938.1305849090909,
+                    953.048023909091,
+                    942.3012636363636
+                ],
+                [
+                    928.4631358181819,
+                    960.123514,
+                    888.85957275,
+                    917.4641806363636,
+                    978.1509415454545
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.28",
+        "benchmark" : "org.openjdk.jmc.flightrecorder.json.JsonSerializationBenchmark.fastJson",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 3,
+        "jvm" : "/usr/local/Cellar/openjdk/15.0.2/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Djava.io.tmpdir=/Users/alexandru.ciminian/go/src/github.com/cimi/jmc-json/build/tmp/jmh",
+            "-Duser.country=GB",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "15.0.2",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "15.0.2+7",
+        "warmupIterations" : 5,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "recordingName" : "504214_allocation_before.jfr"
+        },
+        "primaryMetric" : {
+            "score" : 3246.4588636944445,
+            "scoreError" : 121.39821227604435,
+            "scoreConfidence" : [
+                3125.0606514184,
+                3367.857075970489
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3142.4667495,
+                "50.0" : 3179.053258,
+                "90.0" : 3425.4795038,
+                "95.0" : 3428.904589,
+                "99.0" : 3428.904589,
+                "99.9" : 3428.904589,
+                "99.99" : 3428.904589,
+                "99.999" : 3428.904589,
+                "99.9999" : 3428.904589,
+                "100.0" : 3428.904589
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    3161.94199025,
+                    3164.684951,
+                    3158.981959,
+                    3222.383457,
+                    3150.86438575
+                ],
+                [
+                    3142.4667495,
+                    3416.3093496666665,
+                    3340.878614,
+                    3428.904589,
+                    3179.053258
+                ],
+                [
+                    3166.12198375,
+                    3154.73967425,
+                    3214.27051725,
+                    3372.085363333333,
+                    3423.196113666667
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+]
+
+

@@ -3,6 +3,7 @@ package org.openjdk.jmc.flightrecorder.json;
 import java.io.IOException;
 import java.io.StringWriter;
 import java.io.Writer;
+import java.util.Collection;
 import java.util.Map;
 
 import org.openjdk.jmc.common.IDescribable;
@@ -27,9 +28,21 @@ import org.openjdk.jmc.common.item.ItemToolkit;
 public class AdHocIItemCollectionJsonMarshaller extends JsonWriter {
   public static String toJsonString(IItemCollection items) {
     StringWriter sw = new StringWriter();
-    AdHocIItemCollectionJsonMarshaller marshaler = new AdHocIItemCollectionJsonMarshaller(sw);
+    AdHocIItemCollectionJsonMarshaller marshaller = new AdHocIItemCollectionJsonMarshaller(sw);
     try {
-      marshaler.writeEventCollection(items);
+      marshaller.writeRecording(items);
+    } catch (IOException e) {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    }
+    return sw.getBuffer().toString();
+  }
+
+  public static String toJsonString(Iterable<IItem> items) {
+    StringWriter sw = new StringWriter();
+    AdHocIItemCollectionJsonMarshaller marshaller = new AdHocIItemCollectionJsonMarshaller(sw);
+    try {
+      marshaller.writeEvents(items);
     } catch (IOException e) {
       // TODO Auto-generated catch block
       e.printStackTrace();
@@ -41,14 +54,12 @@ public class AdHocIItemCollectionJsonMarshaller extends JsonWriter {
     super(w);
   }
 
-  private void writeEventCollection(IItemCollection eventCollection) throws IOException {
-    writeObjectBegin();
-    nextField(true, "recording");
+  private void writeRecording(IItemCollection recording) throws IOException {
     writeObjectBegin();
     nextField(true, "events");
     writeArrayBegin();
     int count = 0;
-    for (IItemIterable events : eventCollection) {
+    for (IItemIterable events : recording) {
       for (IItem event : events) {
         nextElement(count == 0);
         writeEvent(event);
@@ -57,6 +68,20 @@ public class AdHocIItemCollectionJsonMarshaller extends JsonWriter {
     }
     writeArrayEnd();
     writeObjectEnd();
+    flush();
+  }
+
+  void writeEvents(Iterable<IItem> events) throws IOException {
+    writeObjectBegin();
+    nextField(true, "events");
+    writeArrayBegin();
+    int count = 0;
+    for (IItem event : events) {
+      nextElement(count == 0);
+      writeEvent(event);
+      count++;
+    }
+    writeArrayEnd();
     writeObjectEnd();
     flush();
   }
@@ -64,15 +89,15 @@ public class AdHocIItemCollectionJsonMarshaller extends JsonWriter {
   private void writeEvent(IItem event) {
     writeObjectBegin();
     IType<?> type = event.getType();
-    writeField(true, "type", type.getIdentifier());
-    nextField(false, "values");
+    writeField(true, "eventType", type.getIdentifier());
+    nextField(false, "attributes");
     writeObjectBegin();
-    writeValues(event);
+    writeEventAttributes(event);
     writeObjectEnd();
     writeObjectEnd();
   }
 
-  private void writeTrace(boolean first, IMCStackTrace trace) {
+  private void writeStackTrace(boolean first, IMCStackTrace trace) {
     nextField(first, "stackTrace");
     writeObjectBegin();
     nextField(true, "frames");
@@ -98,7 +123,7 @@ public class AdHocIItemCollectionJsonMarshaller extends JsonWriter {
     writeObjectEnd();
   }
 
-  private void writeValues(IItem event) {
+  private void writeEventAttributes(IItem event) {
     IType<IItem> itemType = ItemToolkit.getItemType(event);
     boolean first = true;
     for (Map.Entry<IAccessorKey<?>, ? extends IDescribable> e : itemType.getAccessorKeys().entrySet()) {
@@ -106,7 +131,7 @@ public class AdHocIItemCollectionJsonMarshaller extends JsonWriter {
       IAccessorKey<?> attribute = e.getKey();
       Object value = accessor.getMember(event);
       if (value instanceof IMCStackTrace) {
-        writeTrace(first, (IMCStackTrace) value);
+        writeStackTrace(first, (IMCStackTrace) value);
       } else {
         writeField(first, attribute.getIdentifier(), value);
       }

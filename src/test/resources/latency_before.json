@@ -1,0 +1,1184 @@
+{
+  "events": [{
+    "eventType": "jdk.JavaMonitorEnter",
+    "attributes": {
+      "startTime": 1541771969474035032,
+      "duration": 1024603372,
+      "eventThread": "Worker Thread 18",
+      "stackTrace": {
+        "frames": [{
+          "name": "se.hirt.jmc.tutorial.latencies.Logger#log(Ljava/lang/String;)V",
+          "line": 30,
+          "type": "INTERPRETED"
+        }, {
+          "name": "se.hirt.jmc.tutorial.latencies.Worker#run()V",
+          "line": 49,
+          "type": "JIT_COMPILED"
+        }, {
+          "name": "java.lang.Thread#run()V",
+          "line": 834,
+          "type": "INTERPRETED"
+        }]
+      },
+      "monitorClass": "se.hirt.jmc.tutorial.latencies.Logger",
+      "previousOwner": "Worker Thread 19",
+      "address": 2029650877576
+    }
+  }, {
+    "eventType": "jdk.JavaMonitorEnter",
+    "attributes": {
+      "startTime": 1541771970132788631,
+      "duration": 24950669206,
+      "eventThread": "Worker Thread 18",
+      "stackTrace": {
+        "frames": [{
+          "name": "se.hirt.jmc.tutorial.latencies.Logger#log(Ljava/lang/String;)V",
+          "line": 30,
+          "type": "INTERPRETED"
+        }, {
+          "name": "se.hirt.jmc.tutorial.latencies.Worker#run()V",
+          "line": 49,
+          "type": "JIT_COMPILED"
+        }, {
+          "name": "java.lang.Thread#run()V",
+          "line": 834,
+          "type": "INTERPRETED"
+        }]
+      },
+      "monitorClass": "se.hirt.jmc.tutorial.latencies.Logger",
+      "previousOwner": "Worker Thread 17",
+      "address": 2029650877576
+    }
+  }, {
+    "eventType": "jdk.DoubleFlag",
+    "attributes": {
+      "startTime": 1541771968657428077,
+      "name": "CompileThresholdScaling",
+      "value": 1.0,
+      "origin": "Default"
+    }
+  }, {
+    "eventType": "jdk.DoubleFlag",
+    "attributes": {
+      "startTime": 1541771968657428891,
+      "name": "FLSLargestBlockCoalesceProximity",
+      "value": 0.99,
+      "origin": "Default"
+    }
+  }, {
+    "eventType": "jdk.CodeCacheConfiguration",
+    "attributes": {
+      "startTime": 1541771968657352876,
+      "initialSize": 2555904,
+      "reservedSize": 251658240,
+      "nonNMethodSize": 5835340,
+      "profiledSize": 122911450,
+      "nonProfiledSize": 122911450,
+      "expansionSize": 65536,
+      "minBlockLength": 4,
+      "startAddress": 2031103049728,
+      "reservedTopAddress": 2031354707968
+    }
+  }, {
+    "eventType": "jdk.IntFlag",
+    "attributes": {
+      "startTime": 1541771968657358214,
+      "name": "UseBootstrapCallInfo",
+      "value": 1,
+      "origin": "Default"
+    }
+  }, {
+    "eventType": "jdk.IntFlag",
+    "attributes": {
+      "startTime": 1541771968657358703,
+      "name": "CompilerDirectivesLimit",
+      "value": 50,
+      "origin": "Default"
+    }
+  }, {
+    "eventType": "jdk.ModuleRequire",
+    "attributes": {
+      "startTime": 1541772028796271912,
+      "source": "jdk.editpad",
+      "requiredModule": "java.desktop"
+    }
+  }, {
+    "eventType": "jdk.ModuleRequire",
+    "attributes": {
+      "startTime": 1541772028796272313,
+      "source": "jdk.editpad",
+      "requiredModule": "java.base"
+    }
+  }, {
+    "eventType": "jdk.SafepointBegin",
+    "attributes": {
+      "startTime": 1541771968628256106,
+      "duration": 316815,
+      "eventThread": "VM Thread",
+      "safepointId": 67,
+      "totalThreadCount": 35,
+      "jniCriticalThreadCount": 0
+    }
+  }, {
+    "eventType": "jdk.SafepointBegin",
+    "attributes": {
+      "startTime": 1541771968639339186,
+      "duration": 278615,
+      "eventThread": "VM Thread",
+      "safepointId": 69,
+      "totalThreadCount": 35,
+      "jniCriticalThreadCount": 0
+    }
+  }, {
+    "eventType": "jdk.LongFlag",
+    "attributes": {
+      "startTime": 1541771968657368837,
+      "name": "ObjectAlignmentInBytes",
+      "value": 8,
+      "origin": "Default"
+    }
+  }, {
+    "eventType": "jdk.LongFlag",
+    "attributes": {
+      "startTime": 1541771968657369315,
+      "name": "UseSSE",
+      "value": 4,
+      "origin": "Default"
+    }
+  }, {
+    "eventType": "se.hirt.jmc.tutorial.latencies.WorkEvent",
+    "attributes": {
+      "startTime": 1541771973146039050,
+      "duration": 806709494,
+      "eventThread": "Worker Thread 15",
+      "stackTrace": {
+        "frames": [{
+          "name": "se.hirt.jmc.tutorial.latencies.Worker#run()V",
+          "line": 48,
+          "type": "JIT_COMPILED"
+        }, {
+          "name": "java.lang.Thread#run()V",
+          "line": 834,
+          "type": "INTERPRETED"
+        }]
+      }
+    }
+  }, {
+    "eventType": "se.hirt.jmc.tutorial.latencies.WorkEvent",
+    "attributes": {
+      "startTime": 1541771980606895581,
+      "duration": 848687789,
+      "eventThread": "Worker Thread 15",
+      "stackTrace": {
+        "frames": [{
+          "name": "se.hirt.jmc.tutorial.latencies.Worker#run()V",
+          "line": 48,
+          "type": "JIT_COMPILED"
+        }, {
+          "name": "java.lang.Thread#run()V",
+          "line": 834,
+          "type": "INTERPRETED"
+        }]
+      }
+    }
+  }, {
+    "eventType": "jdk.CodeSweeperConfiguration",
+    "attributes": {
+      "startTime": 1541771968657354503,
+      "sweeperEnabled": true,
+      "flushingEnabled": true
+    }
+  }, {
+    "eventType": "jdk.CPULoad",
+    "attributes": {
+      "startTime": 1541771969729989302,
+      "jvmUser": 0.15885700285434723,
+      "jvmSystem": 0.0010999907972291112,
+      "machineTotal": 0.1685512661933899
+    }
+  }, {
+    "eventType": "jdk.CPULoad",
+    "attributes": {
+      "startTime": 1541771970726208644,
+      "jvmUser": 0.12771928310394287,
+      "jvmSystem": 0.013754384592175484,
+      "machineTotal": 0.1414736658334732
+    }
+  }, {
+    "eventType": "jdk.ActiveSetting",
+    "attributes": {
+      "startTime": 1541771968651963165,
+      "duration": 0,
+      "eventThread": "JFR Recording Scheduler",
+      "stackTrace": null,
+      "settingFor": "Java Thread Start",
+      "name": "enabled",
+      "value": "true"
+    }
+  }, {
+    "eventType": "jdk.ActiveSetting",
+    "attributes": {
+      "startTime": 1541771968651983314,
+      "duration": 0,
+      "eventThread": "JFR Recording Scheduler",
+      "stackTrace": null,
+      "settingFor": "Java Thread End",
+      "name": "enabled",
+      "value": "true"
+    }
+  }, {
+    "eventType": "jdk.ClassLoadingStatistics",
+    "attributes": {
+      "startTime": 1541771969730107311,
+      "loadedClassCount": 1474,
+      "unloadedClassCount": 0
+    }
+  }, {
+    "eventType": "jdk.ClassLoadingStatistics",
+    "attributes": {
+      "startTime": 1541771970726222505,
+      "loadedClassCount": 1476,
+      "unloadedClassCount": 0
+    }
+  }, {
+    "eventType": "jdk.JavaThreadStatistics",
+    "attributes": {
+      "startTime": 1541771969730104301,
+      "activeCount": 29,
+      "daemonCount": 28,
+      "accumulatedCount": 30,
+      "peakCount": 29
+    }
+  }, {
+    "eventType": "jdk.JavaThreadStatistics",
+    "attributes": {
+      "startTime": 1541771970726221210,
+      "activeCount": 29,
+      "daemonCount": 28,
+      "accumulatedCount": 30,
+      "peakCount": 29
+    }
+  }, {
+    "eventType": "jdk.ThreadCPULoad",
+    "attributes": {
+      "startTime": 1541771968785423997,
+      "eventThread": "C2 CompilerThread2",
+      "user": 0.02338271029293537,
+      "system": 0.0
+    }
+  }, {
+    "eventType": "jdk.ThreadCPULoad",
+    "attributes": {
+      "startTime": 1541771968827459293,
+      "eventThread": "C2 CompilerThread1",
+      "user": 0.018259741365909576,
+      "system": 0.0
+    }
+  }, {
+    "eventType": "jdk.CPUInformation",
+    "attributes": {
+      "startTime": 1541771968655005157,
+      "cpu": "Intel (null) (HT) SSE SSE2 SSE3 SSSE3 SSE4.1 SSE4.2 Core Intel64",
+      "description": "Brand: Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz, Vendor: GenuineIntel\nFamily: <unknown> (0x6), Model: <unknown> (0x5e), Stepping: 0x3\nExt. family: 0x0, Ext. model: 0x5, Type: 0x0, Signature: 0x000506e3\nFeatures: ebx: 0x03100800, ecx: 0xfedaf383, edx: 0xbfebfbff\nExt. features: eax: 0x00000000, ebx: 0x00000000, ecx: 0x00000121, edx: 0x2c100800\nSupports: On-Chip FPU, Virtual Mode Extensions, Debugging Extensions, Page Size Extensions, Time Stamp Counter, Model Specific Registers, Physical Address Extension, Machine Check Exceptions, CMPXCHG8B Instruction, On-Chip APIC, Fast System Call, Memory Type Range Registers, Page Global Enable, Machine Check Architecture, Conditional Mov Instruction, Page Attribute Table, 36-bit Page Size Extension, CLFLUSH Instruction, Debug Trace Store feature, ACPI registers in MSR space, Intel Architecture MMX Technology, Fast Float Point Save and Restore, Streaming SIMD extensions, Streaming SIMD extensions 2, Self-Snoop, Hyper Threading, Thermal Monitor, Streaming SIMD Extensions 3, PCLMULQDQ, Enhanced Intel SpeedStep technology, Thermal Monitor 2, Supplemental Streaming SIMD Extensions 3, Fused Multiply-Add, CMPXCHG16B, xTPR Update Control, Perfmon and Debug Capability, Process-context identifiers, Streaming SIMD extensions 4.1, Streaming SIMD extensions 4.2, MOVBE, Popcount instruction, AESNI, XSAVE, OSXSAVE, AVX, F16C, LAHF/SAHF instruction support, Advanced Bit Manipulations: LZCNT, SYSCALL/SYSRET, Execute Disable Bit, RDTSCP, Intel 64 Architecture, Invariant TSC",
+      "sockets": 1,
+      "cores": 4,
+      "hwThreads": 8
+    }
+  }, {
+    "eventType": "jdk.YoungGenerationConfiguration",
+    "attributes": {
+      "startTime": 1541771968657504672,
+      "minSize": 1363144,
+      "maxSize": 5144313856,
+      "newRatio": 2
+    }
+  }, {
+    "eventType": "jdk.CodeSweeperStatistics",
+    "attributes": {
+      "startTime": 1541771968657353731,
+      "sweepCount": 1,
+      "methodReclaimedCount": 0,
+      "totalSweepTime": 471,
+      "peakFractionTime": 471,
+      "peakSweepTime": 471
+    }
+  }, {
+    "eventType": "jdk.CodeSweeperStatistics",
+    "attributes": {
+      "startTime": 1541772028796357441,
+      "sweepCount": 1,
+      "methodReclaimedCount": 0,
+      "totalSweepTime": 471,
+      "peakFractionTime": 471,
+      "peakSweepTime": 471
+    }
+  }, {
+    "eventType": "jdk.CodeCacheStatistics",
+    "attributes": {
+      "startTime": 1541771968657349825,
+      "codeBlobType": "CodeHeap 'non-profiled nmethods'",
+      "startAddress": 2031231827968,
+      "reservedTopAddress": 2031354707968,
+      "entryCount": 415,
+      "methodCount": 415,
+      "adaptorCount": 0,
+      "unallocatedCapacity": 122091520,
+      "fullCount": 0
+    }
+  }, {
+    "eventType": "jdk.CodeCacheStatistics",
+    "attributes": {
+      "startTime": 1541771968657351923,
+      "codeBlobType": "CodeHeap 'profiled nmethods'",
+      "startAddress": 2031108947968,
+      "reservedTopAddress": 2031231827968,
+      "entryCount": 898,
+      "methodCount": 898,
+      "adaptorCount": 0,
+      "unallocatedCapacity": 120023296,
+      "fullCount": 0
+    }
+  }, {
+    "eventType": "jdk.OSInformation",
+    "attributes": {
+      "startTime": 1541771968654957715,
+      "osVersion": "OS: Windows 10 , 64 bit Build 17134 (10.0.17134.1)\n"
+    }
+  }, {
+    "eventType": "jdk.GCSurvivorConfiguration",
+    "attributes": {
+      "startTime": 1541771968657502517,
+      "maxTenuringThreshold": 15,
+      "initialTenuringThreshold": 7
+    }
+  }, {
+    "eventType": "jdk.PhysicalMemory",
+    "attributes": {
+      "startTime": 1541771968655243021,
+      "totalSize": 34295402496,
+      "usedSize": 8551194624
+    }
+  }, {
+    "eventType": "jdk.PhysicalMemory",
+    "attributes": {
+      "startTime": 1541772028794152495,
+      "totalSize": 34295402496,
+      "usedSize": 8550780928
+    }
+  }, {
+    "eventType": "jdk.ActiveRecording",
+    "attributes": {
+      "startTime": 1541771968651294674,
+      "duration": 0,
+      "eventThread": "JFR Recording Scheduler",
+      "stackTrace": null,
+      "id": 1,
+      "name": "Latency",
+      "destination": "G:\\Work\\Tutorials2018\\Tutorial2018-win\\Tutorial2018\\autorecordings\\latency.jfr",
+      "maxAge": 9223372036854775807,
+      "maxSize": 0,
+      "recordingStart": 1541771968606,
+      "recordingDuration": 60000
+    }
+  }, {
+    "eventType": "jdk.CompilerStatistics",
+    "attributes": {
+      "startTime": 1541771969730109626,
+      "compileCount": 1301,
+      "bailoutCount": 0,
+      "invalidatedCount": 0,
+      "osrCompileCount": 6,
+      "standardCompileCount": 1295,
+      "osrBytesCompiled": 0,
+      "standardBytesCompiled": 0,
+      "nmetodsSize": 2890344,
+      "nmetodCodeSize": 1526304,
+      "peakTimeSpent": 80,
+      "totalTimeSpent": 1070
+    }
+  }, {
+    "eventType": "jdk.CompilerStatistics",
+    "attributes": {
+      "startTime": 1541771970726224862,
+      "compileCount": 1310,
+      "bailoutCount": 0,
+      "invalidatedCount": 0,
+      "osrCompileCount": 6,
+      "standardCompileCount": 1304,
+      "osrBytesCompiled": 0,
+      "standardBytesCompiled": 0,
+      "nmetodsSize": 2915184,
+      "nmetodCodeSize": 1540640,
+      "peakTimeSpent": 80,
+      "totalTimeSpent": 1072
+    }
+  }, {
+    "eventType": "jdk.GCHeapConfiguration",
+    "attributes": {
+      "startTime": 1541771968657503817,
+      "minSize": 6815736,
+      "maxSize": 8575254528,
+      "initialSize": 536870912,
+      "usesCompressedOops": true,
+      "compressedOopsMode": "Zero based",
+      "objectAlignment": 8,
+      "heapAddressBits": 32
+    }
+  }, {
+    "eventType": "jdk.JVMInformation",
+    "attributes": {
+      "startTime": 1541771968654271691,
+      "jvmName": "OpenJDK 64-Bit Server VM",
+      "jvmVersion": "OpenJDK 64-Bit Server VM (11.0.1+13) for windows-amd64 JRE (11.0.1+13), built on Oct  6 2018 13:18:13 by \"mach5one\" with MS VC++ 15.5 (VS2017)",
+      "jvmArguments": "-Djava.net.preferIPv4Stack=true -XX:+FlightRecorder -XX:FlightRecorderOptions=stackdepth=128 -XX:+UnlockDiagnosticVMOptions -XX:+DebugNonSafepoints -XX:StartFlightRecording=delay=20s,duration=60s,name=Latency,filename=G:\\Work\\Tutorials2018\\Tutorial2018-win\\Tutorial2018\\workspace/../autorecordings/latency.jfr,settings=profile -Xlog:jfr=info -Dfile.encoding=UTF-8",
+      "jvmFlags": null,
+      "javaArguments": "se.hirt.jmc.tutorial.latencies.Latencies",
+      "jvmStartTime": 1541771947637
+    }
+  }, {
+    "eventType": "jdk.GCTLABConfiguration",
+    "attributes": {
+      "startTime": 1541771968657503187,
+      "usesTLABs": true,
+      "minTLABSize": 2048,
+      "tlabRefillWasteLimit": 64
+    }
+  }, {
+    "eventType": "jdk.ThreadContextSwitchRate",
+    "attributes": {
+      "startTime": 1541771978640801107,
+      "switchRate": 5374.55029296875
+    }
+  }, {
+    "eventType": "jdk.ThreadContextSwitchRate",
+    "attributes": {
+      "startTime": 1541771988660850633,
+      "switchRate": 5089.6943359375
+    }
+  }, {
+    "eventType": "jdk.ClassLoaderStatistics",
+    "attributes": {
+      "startTime": 1541771968655212377,
+      "classLoader": null,
+      "parentClassLoader": null,
+      "classLoaderData": 2031461522368,
+      "classCount": 1541,
+      "chunkSize": 11067392,
+      "blockSize": 11035392,
+      "anonymousClassCount": 79,
+      "anonymousChunkSize": 233472,
+      "anonymousBlockSize": 149904
+    }
+  }, {
+    "eventType": "jdk.ClassLoaderStatistics",
+    "attributes": {
+      "startTime": 1541771968655212868,
+      "classLoader": "jdk.internal.reflect.DelegatingClassLoader",
+      "parentClassLoader": null,
+      "classLoaderData": 2031500859296,
+      "classCount": 1,
+      "chunkSize": 6144,
+      "blockSize": 3952,
+      "anonymousClassCount": 0,
+      "anonymousChunkSize": 0,
+      "anonymousBlockSize": 0
+    }
+  }, {
+    "eventType": "jdk.GCConfiguration",
+    "attributes": {
+      "startTime": 1541771968657501747,
+      "youngCollector": "G1New",
+      "oldCollector": "G1Old",
+      "parallelGCThreads": 8,
+      "concurrentGCThreads": 2,
+      "usesDynamicGCThreads": true,
+      "isExplicitGCConcurrent": false,
+      "isExplicitGCDisabled": false,
+      "pauseTarget": -9223372036854775808,
+      "gcTimeRatio": 12
+    }
+  }, {
+    "eventType": "jdk.GCConfiguration",
+    "attributes": {
+      "startTime": 1541772028796360004,
+      "youngCollector": "G1New",
+      "oldCollector": "G1Old",
+      "parallelGCThreads": 8,
+      "concurrentGCThreads": 2,
+      "usesDynamicGCThreads": true,
+      "isExplicitGCConcurrent": false,
+      "isExplicitGCDisabled": false,
+      "pauseTarget": -9223372036854775808,
+      "gcTimeRatio": 12
+    }
+  }, {
+    "eventType": "jdk.CPUTimeStampCounter",
+    "attributes": {
+      "startTime": 1541771968655007535,
+      "fastTimeEnabled": true,
+      "fastTimeAutoEnabled": true,
+      "osFrequency": 10000000,
+      "fastTimeFrequency": 4000000000
+    }
+  }, {
+    "eventType": "jdk.ExecutionSample",
+    "attributes": {
+      "startTime": 1541771968662061181,
+      "eventThread": "Worker Thread 1",
+      "stackTrace": {
+        "frames": [{
+          "name": "se.hirt.jmc.tutorial.latencies.Worker#run()V",
+          "line": 0,
+          "type": "JIT_COMPILED"
+        }, {
+          "name": "java.lang.Thread#run()V",
+          "line": 0,
+          "type": "INTERPRETED"
+        }]
+      },
+      "state": "STATE_RUNNABLE"
+    }
+  }, {
+    "eventType": "jdk.ExecutionSample",
+    "attributes": {
+      "startTime": 1541771968728196362,
+      "eventThread": "Worker Thread 2",
+      "stackTrace": {
+        "frames": [{
+          "name": "se.hirt.jmc.tutorial.latencies.Worker#run()V",
+          "line": 0,
+          "type": "JIT_COMPILED"
+        }, {
+          "name": "java.lang.Thread#run()V",
+          "line": 0,
+          "type": "INTERPRETED"
+        }]
+      },
+      "state": "STATE_RUNNABLE"
+    }
+  }, {
+    "eventType": "jdk.SystemProcess",
+    "attributes": {
+      "startTime": 1541772028727510985,
+      "pid": "20052",
+      "commandLine": "C:\\Program Files (x86)\\Western Digital\\WD Utilities\\WDDriveUtilitiesHelper.exe"
+    }
+  }, {
+    "eventType": "jdk.SystemProcess",
+    "attributes": {
+      "startTime": 1541772028727510985,
+      "pid": "19768",
+      "commandLine": "C:\\Program Files (x86)\\Sony\\PlayMemories Home\\PMBVolumeWatcher.exe"
+    }
+  }, {
+    "eventType": "jdk.NativeLibrary",
+    "attributes": {
+      "startTime": 1541771968655309436,
+      "name": "G:\\Work\\Tutorials2018\\Tutorial2018-win\\Tutorial2018\\jdk-11.0.1\\bin\\javaw.exe",
+      "baseAddress": 140701276897280,
+      "topAddress": 140701277179904
+    }
+  }, {
+    "eventType": "jdk.NativeLibrary",
+    "attributes": {
+      "startTime": 1541771968655317990,
+      "name": "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+      "baseAddress": 140723357679616,
+      "topAddress": 140723359649792
+    }
+  }, {
+    "eventType": "jdk.ExecuteVMOperation",
+    "attributes": {
+      "startTime": 1541771968628337630,
+      "duration": 30927,
+      "eventThread": "VM Thread",
+      "operation": "GC_HeapInspection",
+      "safepoint": true,
+      "blocking": true,
+      "caller": "JFR Recording Scheduler",
+      "safepointId": 67
+    }
+  }, {
+    "eventType": "jdk.ExecuteVMOperation",
+    "attributes": {
+      "startTime": 1541771968639410057,
+      "duration": 47101835,
+      "eventThread": "VM Thread",
+      "operation": "RedefineClasses",
+      "safepoint": true,
+      "blocking": true,
+      "caller": "JFR Recording Scheduler",
+      "safepointId": 69
+    }
+  }, {
+    "eventType": "jdk.InitialSystemProperty",
+    "attributes": {
+      "startTime": 1541771968654968962,
+      "key": "java.vm.specification.name",
+      "value": "Java Virtual Machine Specification"
+    }
+  }, {
+    "eventType": "jdk.InitialSystemProperty",
+    "attributes": {
+      "startTime": 1541771968654969695,
+      "key": "java.vm.version",
+      "value": "11.0.1+13"
+    }
+  }, {
+    "eventType": "jdk.ThreadAllocationStatistics",
+    "attributes": {
+      "startTime": 1541771968655240672,
+      "allocated": 15480496,
+      "eventThread": "main"
+    }
+  }, {
+    "eventType": "jdk.ThreadAllocationStatistics",
+    "attributes": {
+      "startTime": 1541771968655241063,
+      "allocated": 0,
+      "eventThread": "Reference Handler"
+    }
+  }, {
+    "eventType": "jdk.BooleanFlag",
+    "attributes": {
+      "startTime": 1541771968657432017,
+      "name": "UseCompressedOops",
+      "value": true,
+      "origin": "Ergonomic"
+    }
+  }, {
+    "eventType": "jdk.BooleanFlag",
+    "attributes": {
+      "startTime": 1541771968657432339,
+      "name": "UseCompressedClassPointers",
+      "value": true,
+      "origin": "Ergonomic"
+    }
+  }, {
+    "eventType": "jdk.JavaMonitorWait",
+    "attributes": {
+      "startTime": 1541771968657985796,
+      "duration": 240275662542,
+      "eventThread": "JFR Recording Scheduler",
+      "stackTrace": {
+        "frames": [{
+          "name": "java.lang.Object#wait(J)V",
+          "line": -1,
+          "type": "UNKNOWN"
+        }, {
+          "name": "java.util.TimerThread#mainLoop()V",
+          "line": 553,
+          "type": "INTERPRETED"
+        }, {
+          "name": "java.util.TimerThread#run()V",
+          "line": 506,
+          "type": "INTERPRETED"
+        }]
+      },
+      "monitorClass": "java.util.TaskQueue",
+      "notifier": null,
+      "timeout": 59949,
+      "timedOut": true,
+      "address": 2029650853768
+    }
+  }, {
+    "eventType": "jdk.UnsignedIntFlag",
+    "attributes": {
+      "startTime": 1541771968657363052,
+      "name": "HandshakeTimeout",
+      "value": 0,
+      "origin": "Default"
+    }
+  }, {
+    "eventType": "jdk.UnsignedIntFlag",
+    "attributes": {
+      "startTime": 1541771968657365470,
+      "name": "G1RefProcDrainInterval",
+      "value": 1000,
+      "origin": "Default"
+    }
+  }, {
+    "eventType": "jdk.BiasedLockRevocation",
+    "attributes": {
+      "startTime": 1541771968670109807,
+      "duration": 371004,
+      "eventThread": "Worker Thread 2",
+      "stackTrace": {
+        "frames": [{
+          "name": "java.util.concurrent.ConcurrentHashMap#transfer([Ljava/util/concurrent/ConcurrentHashMap$Node;[Ljava/util/concurrent/ConcurrentHashMap$Node;)V",
+          "line": 2478,
+          "type": "INTERPRETED"
+        }, {
+          "name": "java.util.concurrent.ConcurrentHashMap#addCount(JI)V",
+          "line": 2348,
+          "type": "JIT_COMPILED"
+        }, {
+          "name": "java.util.concurrent.ConcurrentHashMap#putVal(Ljava/lang/Object;Ljava/lang/Object;Z)Ljava/lang/Object;",
+          "line": 1075,
+          "type": "JIT_COMPILED"
+        }, {
+          "name": "java.util.concurrent.ConcurrentHashMap#putIfAbsent(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;",
+          "line": 1541,
+          "type": "JIT_COMPILED"
+        }, {
+          "name": "java.lang.ClassLoader#getClassLoadingLock(Ljava/lang/String;)Ljava/lang/Object;",
+          "line": 667,
+          "type": "INTERPRETED"
+        }, {
+          "name": "jdk.internal.loader.BuiltinClassLoader#loadClassOrNull(Ljava/lang/String;Z)Ljava/lang/Class;",
+          "line": 593,
+          "type": "INTERPRETED"
+        }, {
+          "name": "jdk.internal.loader.BuiltinClassLoader#loadClass(Ljava/lang/String;Z)Ljava/lang/Class;",
+          "line": 581,
+          "type": "INTERPRETED"
+        }, {
+          "name": "jdk.internal.loader.ClassLoaders$AppClassLoader#loadClass(Ljava/lang/String;Z)Ljava/lang/Class;",
+          "line": 178,
+          "type": "INTERPRETED"
+        }, {
+          "name": "java.lang.ClassLoader#loadClass(Ljava/lang/String;)Ljava/lang/Class;",
+          "line": 521,
+          "type": "INTERPRETED"
+        }, {
+          "name": "se.hirt.jmc.tutorial.latencies.LogEvent#commit()V",
+          "line": -1,
+          "type": "INTERPRETED"
+        }, {
+          "name": "se.hirt.jmc.tutorial.latencies.Logger#log(Ljava/lang/String;)V",
+          "line": 41,
+          "type": "INTERPRETED"
+        }, {
+          "name": "se.hirt.jmc.tutorial.latencies.Worker#run()V",
+          "line": 49,
+          "type": "JIT_COMPILED"
+        }, {
+          "name": "java.lang.Thread#run()V",
+          "line": 834,
+          "type": "INTERPRETED"
+        }]
+      },
+      "lockClass": "java.util.concurrent.ConcurrentHashMap$Node",
+      "safepointId": 73,
+      "previousOwner": "main"
+    }
+  }, {
+    "eventType": "jdk.BiasedLockRevocation",
+    "attributes": {
+      "startTime": 1541771968670216360,
+      "duration": 308865,
+      "eventThread": "Worker Thread 2",
+      "stackTrace": {
+        "frames": [{
+          "name": "java.util.concurrent.ConcurrentHashMap#transfer([Ljava/util/concurrent/ConcurrentHashMap$Node;[Ljava/util/concurrent/ConcurrentHashMap$Node;)V",
+          "line": 2478,
+          "type": "INTERPRETED"
+        }, {
+          "name": "java.util.concurrent.ConcurrentHashMap#addCount(JI)V",
+          "line": 2348,
+          "type": "JIT_COMPILED"
+        }, {
+          "name": "java.util.concurrent.ConcurrentHashMap#putVal(Ljava/lang/Object;Ljava/lang/Object;Z)Ljava/lang/Object;",
+          "line": 1075,
+          "type": "JIT_COMPILED"
+        }, {
+          "name": "java.util.concurrent.ConcurrentHashMap#putIfAbsent(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;",
+          "line": 1541,
+          "type": "JIT_COMPILED"
+        }, {
+          "name": "java.lang.ClassLoader#getClassLoadingLock(Ljava/lang/String;)Ljava/lang/Object;",
+          "line": 667,
+          "type": "INTERPRETED"
+        }, {
+          "name": "jdk.internal.loader.BuiltinClassLoader#loadClassOrNull(Ljava/lang/String;Z)Ljava/lang/Class;",
+          "line": 593,
+          "type": "INTERPRETED"
+        }, {
+          "name": "jdk.internal.loader.BuiltinClassLoader#loadClass(Ljava/lang/String;Z)Ljava/lang/Class;",
+          "line": 581,
+          "type": "INTERPRETED"
+        }, {
+          "name": "jdk.internal.loader.ClassLoaders$AppClassLoader#loadClass(Ljava/lang/String;Z)Ljava/lang/Class;",
+          "line": 178,
+          "type": "INTERPRETED"
+        }, {
+          "name": "java.lang.ClassLoader#loadClass(Ljava/lang/String;)Ljava/lang/Class;",
+          "line": 521,
+          "type": "INTERPRETED"
+        }, {
+          "name": "se.hirt.jmc.tutorial.latencies.LogEvent#commit()V",
+          "line": -1,
+          "type": "INTERPRETED"
+        }, {
+          "name": "se.hirt.jmc.tutorial.latencies.Logger#log(Ljava/lang/String;)V",
+          "line": 41,
+          "type": "INTERPRETED"
+        }, {
+          "name": "se.hirt.jmc.tutorial.latencies.Worker#run()V",
+          "line": 49,
+          "type": "JIT_COMPILED"
+        }, {
+          "name": "java.lang.Thread#run()V",
+          "line": 834,
+          "type": "INTERPRETED"
+        }]
+      },
+      "lockClass": "java.util.concurrent.ConcurrentHashMap$Node",
+      "safepointId": 75,
+      "previousOwner": "main"
+    }
+  }, {
+    "eventType": "jdk.StringFlag",
+    "attributes": {
+      "startTime": 1541771968657490099,
+      "name": "DisableIntrinsic",
+      "value": "",
+      "origin": "Default"
+    }
+  }, {
+    "eventType": "jdk.StringFlag",
+    "attributes": {
+      "startTime": 1541771968657490630,
+      "name": "DeoptimizeOnlyAt",
+      "value": "",
+      "origin": "Default"
+    }
+  }, {
+    "eventType": "jdk.ExceptionStatistics",
+    "attributes": {
+      "startTime": 1541771969730258306,
+      "duration": 0,
+      "eventThread": "JFR Periodic Tasks",
+      "stackTrace": null,
+      "throwables": 30
+    }
+  }, {
+    "eventType": "jdk.ExceptionStatistics",
+    "attributes": {
+      "startTime": 1541771970726239812,
+      "duration": 0,
+      "eventThread": "JFR Periodic Tasks",
+      "stackTrace": null,
+      "throwables": 30
+    }
+  }, {
+    "eventType": "jdk.ObjectAllocationInNewTLAB",
+    "attributes": {
+      "startTime": 1541771988875260388,
+      "eventThread": "Worker Thread 13",
+      "stackTrace": {
+        "frames": [{
+          "name": "se.hirt.jmc.tutorial.latencies.Worker#run()V",
+          "line": 36,
+          "type": "JIT_COMPILED"
+        }, {
+          "name": "java.lang.Thread#run()V",
+          "line": 834,
+          "type": "INTERPRETED"
+        }]
+      },
+      "objectClass": "se.hirt.jmc.tutorial.latencies.WorkEvent",
+      "allocationSize": 32,
+      "tlabSize": 1046528
+    }
+  }, {
+    "eventType": "jdk.ObjectAllocationInNewTLAB",
+    "attributes": {
+      "startTime": 1541771989075799871,
+      "eventThread": "Worker Thread 14",
+      "stackTrace": {
+        "frames": [{
+          "name": "java.util.concurrent.ConcurrentHashMap#putVal(Ljava/lang/Object;Ljava/lang/Object;Z)Ljava/lang/Object;",
+          "line": 1019,
+          "type": "JIT_COMPILED"
+        }, {
+          "name": "java.util.concurrent.ConcurrentHashMap#put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;",
+          "line": 1006,
+          "type": "INTERPRETED"
+        }, {
+          "name": "jdk.jfr.internal.StringPool$SimpleStringIdPool#storeString(Ljava/lang/String;)J",
+          "line": 108,
+          "type": "INTERPRETED"
+        }, {
+          "name": "jdk.jfr.internal.StringPool$SimpleStringIdPool#addString(Ljava/lang/String;)J",
+          "line": 102,
+          "type": "INTERPRETED"
+        }, {
+          "name": "jdk.jfr.internal.StringPool#addString(Ljava/lang/String;)J",
+          "line": 45,
+          "type": "JIT_COMPILED"
+        }, {
+          "name": "jdk.jfr.internal.EventWriter#putString(Ljava/lang/String;Ljdk/jfr/internal/StringPool;)V",
+          "line": 127,
+          "type": "JIT_COMPILED"
+        }, {
+          "name": "jdk.jfr.internal.handlers.EventHandler2034_1541771948493-92536#write(JJLjava/lang/String;)V",
+          "line": -1,
+          "type": "INTERPRETED"
+        }, {
+          "name": "se.hirt.jmc.tutorial.latencies.LogEvent#commit()V",
+          "line": -1,
+          "type": "INTERPRETED"
+        }, {
+          "name": "se.hirt.jmc.tutorial.latencies.Logger#log(Ljava/lang/String;)V",
+          "line": 41,
+          "type": "INTERPRETED"
+        }, {
+          "name": "se.hirt.jmc.tutorial.latencies.Worker#run()V",
+          "line": 49,
+          "type": "JIT_COMPILED"
+        }, {
+          "name": "java.lang.Thread#run()V",
+          "line": 834,
+          "type": "INTERPRETED"
+        }]
+      },
+      "objectClass": "java.util.concurrent.ConcurrentHashMap$Node",
+      "allocationSize": 32,
+      "tlabSize": 2048
+    }
+  }, {
+    "eventType": "se.hirt.jmc.tutorial.latencies.LogEvent",
+    "attributes": {
+      "startTime": 1541771973146023170,
+      "duration": 805437928,
+      "eventThread": "Worker Thread 10",
+      "stackTrace": {
+        "frames": [{
+          "name": "se.hirt.jmc.tutorial.latencies.Logger#log(Ljava/lang/String;)V",
+          "line": 41,
+          "type": "INTERPRETED"
+        }, {
+          "name": "se.hirt.jmc.tutorial.latencies.Worker#run()V",
+          "line": 49,
+          "type": "JIT_COMPILED"
+        }, {
+          "name": "java.lang.Thread#run()V",
+          "line": 834,
+          "type": "INTERPRETED"
+        }]
+      },
+      "message": "Worker 10 reporting work done"
+    }
+  }, {
+    "eventType": "se.hirt.jmc.tutorial.latencies.LogEvent",
+    "attributes": {
+      "startTime": 1541771980206094434,
+      "duration": 801508690,
+      "eventThread": "Worker Thread 10",
+      "stackTrace": {
+        "frames": [{
+          "name": "se.hirt.jmc.tutorial.latencies.Logger#log(Ljava/lang/String;)V",
+          "line": 41,
+          "type": "INTERPRETED"
+        }, {
+          "name": "se.hirt.jmc.tutorial.latencies.Worker#run()V",
+          "line": 49,
+          "type": "JIT_COMPILED"
+        }, {
+          "name": "java.lang.Thread#run()V",
+          "line": 834,
+          "type": "INTERPRETED"
+        }]
+      },
+      "message": "Worker 10 reporting work done"
+    }
+  }, {
+    "eventType": "jdk.InitialEnvironmentVariable",
+    "attributes": {
+      "startTime": 1541771968654984069,
+      "key": "ADSK_CLM_WPAD_PROXY_CHECK",
+      "value": "FALSE"
+    }
+  }, {
+    "eventType": "jdk.InitialEnvironmentVariable",
+    "attributes": {
+      "startTime": 1541771968654984448,
+      "key": "ALLUSERSPROFILE",
+      "value": "C:\\ProgramData"
+    }
+  }, {
+    "eventType": "jdk.ThreadSleep",
+    "attributes": {
+      "startTime": 1541771973146024451,
+      "duration": 805408584,
+      "eventThread": "Worker Thread 10",
+      "stackTrace": {
+        "frames": [{
+          "name": "java.lang.Thread#sleep(J)V",
+          "line": -1,
+          "type": "UNKNOWN"
+        }, {
+          "name": "se.hirt.jmc.tutorial.latencies.Logger#log(Ljava/lang/String;)V",
+          "line": 36,
+          "type": "INTERPRETED"
+        }, {
+          "name": "se.hirt.jmc.tutorial.latencies.Worker#run()V",
+          "line": 49,
+          "type": "JIT_COMPILED"
+        }, {
+          "name": "java.lang.Thread#run()V",
+          "line": 834,
+          "type": "INTERPRETED"
+        }]
+      },
+      "time": 200
+    }
+  }, {
+    "eventType": "jdk.ThreadSleep",
+    "attributes": {
+      "startTime": 1541771980206095314,
+      "duration": 801487060,
+      "eventThread": "Worker Thread 10",
+      "stackTrace": {
+        "frames": [{
+          "name": "java.lang.Thread#sleep(J)V",
+          "line": -1,
+          "type": "UNKNOWN"
+        }, {
+          "name": "se.hirt.jmc.tutorial.latencies.Logger#log(Ljava/lang/String;)V",
+          "line": 36,
+          "type": "INTERPRETED"
+        }, {
+          "name": "se.hirt.jmc.tutorial.latencies.Worker#run()V",
+          "line": 49,
+          "type": "JIT_COMPILED"
+        }, {
+          "name": "java.lang.Thread#run()V",
+          "line": 834,
+          "type": "INTERPRETED"
+        }]
+      },
+      "time": 200
+    }
+  }, {
+    "eventType": "jdk.UnsignedLongFlag",
+    "attributes": {
+      "startTime": 1541771968657393550,
+      "name": "HeapSearchSteps",
+      "value": 3,
+      "origin": "Default"
+    }
+  }, {
+    "eventType": "jdk.UnsignedLongFlag",
+    "attributes": {
+      "startTime": 1541771968657393865,
+      "name": "NUMAChunkResizeWeight",
+      "value": 20,
+      "origin": "Default"
+    }
+  }, {
+    "eventType": "jdk.ThreadEnd",
+    "attributes": {
+      "startTime": 1541771968785403024,
+      "eventThread": "C2 CompilerThread2",
+      "thread": "C2 CompilerThread2"
+    }
+  }, {
+    "eventType": "jdk.ThreadEnd",
+    "attributes": {
+      "startTime": 1541771968827447861,
+      "eventThread": "C2 CompilerThread1",
+      "thread": "C2 CompilerThread1"
+    }
+  }, {
+    "eventType": "jdk.NativeMethodSample",
+    "attributes": {
+      "startTime": 1541771968639012819,
+      "eventThread": "main",
+      "stackTrace": {
+        "frames": [{
+          "name": "java.io.FileInputStream#readBytes([BII)I",
+          "line": 0,
+          "type": "UNKNOWN"
+        }, {
+          "name": "java.io.FileInputStream#read([BII)I",
+          "line": 0,
+          "type": "INTERPRETED"
+        }, {
+          "name": "java.io.BufferedInputStream#fill()V",
+          "line": 0,
+          "type": "INTERPRETED"
+        }, {
+          "name": "java.io.BufferedInputStream#read()I",
+          "line": 0,
+          "type": "INTERPRETED"
+        }, {
+          "name": "se.hirt.jmc.tutorial.latencies.Latencies#main([Ljava/lang/String;)V",
+          "line": 0,
+          "type": "INTERPRETED"
+        }]
+      },
+      "state": "STATE_RUNNABLE"
+    }
+  }, {
+    "eventType": "jdk.NativeMethodSample",
+    "attributes": {
+      "startTime": 1541771968981670433,
+      "eventThread": "main",
+      "stackTrace": {
+        "frames": [{
+          "name": "java.io.FileInputStream#readBytes([BII)I",
+          "line": 0,
+          "type": "UNKNOWN"
+        }, {
+          "name": "java.io.FileInputStream#read([BII)I",
+          "line": 0,
+          "type": "INTERPRETED"
+        }, {
+          "name": "java.io.BufferedInputStream#fill()V",
+          "line": 0,
+          "type": "INTERPRETED"
+        }, {
+          "name": "java.io.BufferedInputStream#read()I",
+          "line": 0,
+          "type": "INTERPRETED"
+        }, {
+          "name": "se.hirt.jmc.tutorial.latencies.Latencies#main([Ljava/lang/String;)V",
+          "line": 0,
+          "type": "INTERPRETED"
+        }]
+      },
+      "state": "STATE_RUNNABLE"
+    }
+  }, {
+    "eventType": "jdk.NetworkUtilization",
+    "attributes": {
+      "startTime": 1541771978642206341,
+      "networkInterface": "Hyper-V Virtual Ethernet Adapter #15",
+      "readRate": 3349,
+      "writeRate": 461
+    }
+  }, {
+    "eventType": "jdk.NetworkUtilization",
+    "attributes": {
+      "startTime": 1541771978642206341,
+      "networkInterface": "Hyper-V Virtual Ethernet Adapter #14",
+      "readRate": 0,
+      "writeRate": 56
+    }
+  }, {
+    "eventType": "jdk.CompilerConfiguration",
+    "attributes": {
+      "startTime": 1541771968657344528,
+      "threadCount": 4,
+      "tieredCompilation": true
+    }
+  }, {
+    "eventType": "jdk.ModuleExport",
+    "attributes": {
+      "startTime": 1541772028796294013,
+      "exportedPackage": "com.sun.tools.javac.tree",
+      "targetModule": "jdk.javadoc",
+      "exportingModule": "jdk.compiler"
+    }
+  }, {
+    "eventType": "jdk.ModuleExport",
+    "attributes": {
+      "startTime": 1541772028796294224,
+      "exportedPackage": "com.sun.tools.javac.tree",
+      "targetModule": "jdk.jshell",
+      "exportingModule": "jdk.compiler"
+    }
+  }]
+}

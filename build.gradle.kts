@@ -24,6 +24,7 @@ dependencies {
     jmh("org.openjdk.jmc:flightrecorder:8.0.0-SNAPSHOT")
 
     testImplementation("junit:junit:4.13")
+    testImplementation("org.skyscreamer:jsonassert:1.5.0")
 }
 
 tasks.withType<Test> {

@@ -16,13 +16,9 @@ import com.alibaba.fastjson.JSONValidator;
 
 public class IItemCollectionJsonMarshallerTest {
 
-  private InputStream readResource(String path) {
-    return IItemCollectionJsonMarshallerTest.class.getClassLoader().getResourceAsStream(path);
-  }
-
   @Test
   public void validateFastJsonMarshalling() throws IOException, CouldNotLoadRecordingException {
-    IItemCollection events = JfrLoaderToolkit.loadEvents(readResource("real-recording.jfr"));
+    IItemCollection events = JfrLoaderToolkit.loadEvents(Utils.readResource("hotmethods.jfr"));
     long start = System.nanoTime();
     String jsonEvents = FastJsonIItemCollectionJsonMarshaller.toJsonString(events);
     System.out.println("FastJSON marshalling time: " + (System.nanoTime() - start) / 1e6 + "ms");
@@ -32,7 +28,7 @@ public class IItemCollectionJsonMarshallerTest {
 
   @Test
   public void validateAdHocMarshalling() throws IOException, CouldNotLoadRecordingException {
-    IItemCollection events = JfrLoaderToolkit.loadEvents(readResource("real-recording.jfr"));
+    IItemCollection events = JfrLoaderToolkit.loadEvents(Utils.readResource("hotmethods.jfr"));
     long start = System.nanoTime();
     String jsonEvents = AdHocIItemCollectionJsonMarshaller.toJsonString(events);
     System.out.println("Ad-hoc JSON marshalling time: " + (System.nanoTime() - start) / 1e6 + "ms");

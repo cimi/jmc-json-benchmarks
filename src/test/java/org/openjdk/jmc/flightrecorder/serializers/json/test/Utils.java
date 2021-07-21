@@ -1,4 +1,4 @@
-package org.openjdk.jmc.flightrecorder.json.test;
+package org.openjdk.jmc.flightrecorder.serializers.json.test;
 
 import java.io.BufferedReader;
 import java.io.IOException;

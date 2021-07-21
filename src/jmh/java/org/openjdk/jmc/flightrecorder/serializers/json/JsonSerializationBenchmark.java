@@ -1,4 +1,4 @@
-package org.openjdk.jmc.flightrecorder.json;
+package org.openjdk.jmc.flightrecorder.serializers.json;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -63,6 +63,6 @@ public class JsonSerializationBenchmark {
   @Benchmark
   @BenchmarkMode(Mode.AverageTime)
   public void adHoc(Blackhole bh) {
-    bh.consume(AdHocIItemCollectionJsonMarshaller.toJsonString(events));
+    bh.consume(IItemCollectionJsonSerializer.toJsonString(events));
   }
 }

@@ -1,4 +1,4 @@
-package org.openjdk.jmc.flightrecorder.json;
+package org.openjdk.jmc.flightrecorder.serializers.json;
 
 import java.io.Writer;
 

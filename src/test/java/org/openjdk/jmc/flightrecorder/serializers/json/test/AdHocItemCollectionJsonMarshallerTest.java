@@ -1,4 +1,4 @@
-package org.openjdk.jmc.flightrecorder.json.test;
+package org.openjdk.jmc.flightrecorder.serializers.json.test;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -16,7 +16,7 @@ import org.openjdk.jmc.common.item.IItemIterable;
 import org.openjdk.jmc.common.item.IType;
 import org.openjdk.jmc.flightrecorder.CouldNotLoadRecordingException;
 import org.openjdk.jmc.flightrecorder.JfrLoaderToolkit;
-import org.openjdk.jmc.flightrecorder.json.AdHocIItemCollectionJsonMarshaller;
+import org.openjdk.jmc.flightrecorder.serializers.json.IItemCollectionJsonSerializer;
 import org.skyscreamer.jsonassert.JSONAssert;
 
 @RunWith(Parameterized.class)
@@ -46,7 +46,7 @@ public class AdHocItemCollectionJsonMarshallerTest {
         eventTypes.add(eventGroup.getType());
       }
     }
-    String jsonEvents = AdHocIItemCollectionJsonMarshaller.toJsonString(events);
+    String jsonEvents = IItemCollectionJsonSerializer.toJsonString(events);
     String expected = Utils.readResourceAsString(recordingName + ".json");
     JSONAssert.assertEquals(expected, jsonEvents, true);
   }

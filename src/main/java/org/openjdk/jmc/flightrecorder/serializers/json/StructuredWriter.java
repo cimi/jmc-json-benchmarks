@@ -1,4 +1,4 @@
-package org.openjdk.jmc.flightrecorder.json;
+package org.openjdk.jmc.flightrecorder.serializers.json;
 
 import org.openjdk.jmc.common.*;
 import org.openjdk.jmc.common.unit.IQuantity;

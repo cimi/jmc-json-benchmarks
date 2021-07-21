@@ -1,9 +1,8 @@
-package org.openjdk.jmc.flightrecorder.json;
+package org.openjdk.jmc.flightrecorder.serializers.json;
 
 import java.io.IOException;
 import java.io.StringWriter;
 import java.io.Writer;
-import java.util.Collection;
 import java.util.Map;
 
 import java.util.logging.Level;
@@ -27,12 +26,12 @@ import org.openjdk.jmc.common.item.ItemToolkit;
  * <li>Profit!</li>
  * </ol>
  */
-public class AdHocIItemCollectionJsonMarshaller extends JsonWriter {
+public class IItemCollectionJsonSerializer extends JsonWriter {
   private final static Logger LOGGER = Logger.getLogger("org.openjdk.jmc.flightrecorder.json");
 
   public static String toJsonString(IItemCollection items) {
     StringWriter sw = new StringWriter();
-    AdHocIItemCollectionJsonMarshaller marshaller = new AdHocIItemCollectionJsonMarshaller(sw);
+    IItemCollectionJsonSerializer marshaller = new IItemCollectionJsonSerializer(sw);
     try {
       marshaller.writeRecording(items);
     } catch (IOException e) {
@@ -43,7 +42,7 @@ public class AdHocIItemCollectionJsonMarshaller extends JsonWriter {
 
   public static String toJsonString(Iterable<IItem> items) {
     StringWriter sw = new StringWriter();
-    AdHocIItemCollectionJsonMarshaller marshaller = new AdHocIItemCollectionJsonMarshaller(sw);
+    IItemCollectionJsonSerializer marshaller = new IItemCollectionJsonSerializer(sw);
     try {
       marshaller.writeEvents(items);
     } catch (IOException e) {
@@ -52,7 +51,7 @@ public class AdHocIItemCollectionJsonMarshaller extends JsonWriter {
     return sw.getBuffer().toString();
   }
 
-  private AdHocIItemCollectionJsonMarshaller(Writer w) {
+  private IItemCollectionJsonSerializer(Writer w) {
     super(w);
   }
 

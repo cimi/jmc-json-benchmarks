@@ -6,6 +6,8 @@ import java.io.Writer;
 import java.util.Collection;
 import java.util.Map;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import org.openjdk.jmc.common.IDescribable;
 import org.openjdk.jmc.common.IMCFrame;
 import org.openjdk.jmc.common.IMCMethod;
@@ -26,14 +28,15 @@ import org.openjdk.jmc.common.item.ItemToolkit;
  * </ol>
  */
 public class AdHocIItemCollectionJsonMarshaller extends JsonWriter {
+  private final static Logger LOGGER = Logger.getLogger("org.openjdk.jmc.flightrecorder.json");
+
   public static String toJsonString(IItemCollection items) {
     StringWriter sw = new StringWriter();
     AdHocIItemCollectionJsonMarshaller marshaller = new AdHocIItemCollectionJsonMarshaller(sw);
     try {
       marshaller.writeRecording(items);
     } catch (IOException e) {
-      // TODO Auto-generated catch block
-      e.printStackTrace();
+      LOGGER.log(Level.SEVERE, "Failed to serialize recording to JSON", e);
     }
     return sw.getBuffer().toString();
   }
@@ -44,8 +47,7 @@ public class AdHocIItemCollectionJsonMarshaller extends JsonWriter {
     try {
       marshaller.writeEvents(items);
     } catch (IOException e) {
-      // TODO Auto-generated catch block
-      e.printStackTrace();
+      LOGGER.log(Level.SEVERE, "Failed to serialize items to JSON", e);
     }
     return sw.getBuffer().toString();
   }

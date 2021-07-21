@@ -9,17 +9,17 @@ import org.openjdk.jmc.common.item.IItemCollection;
 import org.openjdk.jmc.flightrecorder.CouldNotLoadRecordingException;
 import org.openjdk.jmc.flightrecorder.JfrLoaderToolkit;
 import org.openjdk.jmc.flightrecorder.serializers.json.IItemCollectionJsonSerializer;
-import org.openjdk.jmc.flightrecorder.serializers.json.FastJsonIItemCollectionJsonMarshaller;
+import org.openjdk.jmc.flightrecorder.serializers.json.FastJsonIItemCollectionJsonSerializer;
 
 import com.alibaba.fastjson.JSONValidator;
 
-public class IItemCollectionJsonMarshallerTest {
+public class IItemCollectionJsonSerializerTest {
 
   @Test
   public void validateFastJsonMarshalling() throws IOException, CouldNotLoadRecordingException {
     IItemCollection events = JfrLoaderToolkit.loadEvents(Utils.readResource("hotmethods.jfr"));
     long start = System.nanoTime();
-    String jsonEvents = FastJsonIItemCollectionJsonMarshaller.toJsonString(events);
+    String jsonEvents = FastJsonIItemCollectionJsonSerializer.toJsonString(events);
     System.out.println("FastJSON marshalling time: " + (System.nanoTime() - start) / 1e6 + "ms");
     JSONValidator validator = JSONValidator.from(jsonEvents);
     assertTrue(validator.validate());

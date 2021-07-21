@@ -27,7 +27,7 @@ import com.alibaba.fastjson.JSONWriter;
 /**
  * Converts IItemCollections of events to JSON.
  */
-public class FastJsonIItemCollectionJsonMarshaller {
+public class FastJsonIItemCollectionJsonSerializer {
 
   public static String toJsonString(IItemCollection eventCollections) {
     StringWriter sw = new StringWriter();

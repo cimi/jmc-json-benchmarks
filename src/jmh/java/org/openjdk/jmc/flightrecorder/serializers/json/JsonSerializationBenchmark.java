@@ -57,7 +57,7 @@ public class JsonSerializationBenchmark {
   @Benchmark
   @BenchmarkMode(Mode.AverageTime)
   public void fastJson(Blackhole bh) {
-    bh.consume(FastJsonIItemCollectionJsonMarshaller.toJsonString(events));
+    bh.consume(FastJsonIItemCollectionJsonSerializer.toJsonString(events));
   }
 
   @Benchmark

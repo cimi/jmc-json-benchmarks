@@ -20,7 +20,7 @@ import org.openjdk.jmc.flightrecorder.serializers.json.IItemCollectionJsonSerial
 import org.skyscreamer.jsonassert.JSONAssert;
 
 @RunWith(Parameterized.class)
-public class AdHocItemCollectionJsonMarshallerTest {
+public class AdHocItemCollectionJsonSerializerTest {
 
   @Parameters
   public static Object[] data() {
@@ -29,7 +29,7 @@ public class AdHocItemCollectionJsonMarshallerTest {
 
   private final String recordingName;
 
-  public AdHocItemCollectionJsonMarshallerTest(String recordingName) {
+  public AdHocItemCollectionJsonSerializerTest(String recordingName) {
     this.recordingName = recordingName;
   }
 
